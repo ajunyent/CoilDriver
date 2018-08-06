@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/ajunyent/Desktop/Frikades/2018/coilDriver/coilDriver.sch</source>
+    <date>Fri 20 Jul 2018 16:43:33 BST</date>
+    <tool>Eeschema 4.0.5+dfsg1-4~bpo8+1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>coilDriver.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Cin1">
+      <value>47u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51DA9B</tstamp>
+    </comp>
+    <comp ref="Cfilt1">
+      <value>47u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51DBB0</tstamp>
+    </comp>
+    <comp ref="Csup1">
+      <value>0.47</value>
+      <libsource lib="device" part="CP1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51DCC1</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM317MDT</value>
+      <footprint>TO-252</footprint>
+      <libsource lib="regul" part="LM317MDT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51DD4B</tstamp>
+    </comp>
+    <comp ref="Rcur1">
+      <value>2.7</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51DE94</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>D_Schottky</value>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51DEF8</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_NMOS_DGS</value>
+      <libsource lib="device" part="Q_NMOS_DGS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51DF6F</tstamp>
+    </comp>
+    <comp ref="Pin1">
+      <value>CONN_01X02</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51E020</tstamp>
+    </comp>
+    <comp ref="Pout1">
+      <value>CONN_01X02</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51E0A5</tstamp>
+    </comp>
+    <comp ref="Pcon1">
+      <value>CONN_01X02</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51E5BC</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>D_Schottky</value>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51E7C4</tstamp>
+    </comp>
+    <comp ref="Rgategnd1">
+      <value>1000</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51ED3A</tstamp>
+    </comp>
+    <comp ref="Rgate1">
+      <value>10</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51EDCB</tstamp>
+    </comp>
+    <comp ref="Rbleed1">
+      <value>1K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B51F56B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector, single row, 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP1">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>SMD*_Pol</fp>
+        <fp>C_Axial*</fp>
+        <fp>C_Radial*</fp>
+        <fp>c_elec*</fp>
+        <fp>C*elec</fp>
+        <fp>TantalC*</fp>
+        <fp>CP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>Diode_*</fp>
+        <fp>D-*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="regul" part="LM317MDT">
+      <aliases>
+        <alias>LM317AMDT</alias>
+      </aliases>
+      <description>0.5A 35V Adjustable Linear Regulator, TO-252</description>
+      <docs>http://www.national.com/ds/LM/LM117.pdf</docs>
+      <footprints>
+        <fp>TO*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM317MDT</field>
+        <field name="Footprint">TO-252</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADJ" type="input"/>
+        <pin num="2" name="OUT" type="power_out"/>
+        <pin num="3" name="IN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_NMOS_DGS">
+      <description>Transistor N-MOSFET (general)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_DGS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="regul">
+      <uri>/usr/share/kicad/library/regul.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(Pcon1-Pad1)">
+      <node ref="Rgate1" pin="2"/>
+      <node ref="Pcon1" pin="1"/>
+    </net>
+    <net code="2" name="Earth">
+      <node ref="Q1" pin="3"/>
+      <node ref="D1" pin="2"/>
+      <node ref="Pin1" pin="2"/>
+      <node ref="Cin1" pin="2"/>
+      <node ref="Csup1" pin="2"/>
+      <node ref="Rgategnd1" pin="2"/>
+      <node ref="Rbleed1" pin="2"/>
+      <node ref="Pcon1" pin="2"/>
+      <node ref="Cfilt1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="Rgategnd1" pin="1"/>
+      <node ref="Rgate1" pin="1"/>
+    </net>
+    <net code="4" name="+5V">
+      <node ref="Pin1" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="Cin1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(Rcur1-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="Rcur1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad1)">
+      <node ref="D2" pin="2"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="Pout1" pin="2"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(Cfilt1-Pad1)">
+      <node ref="Rbleed1" pin="1"/>
+      <node ref="Rcur1" pin="1"/>
+      <node ref="Pout1" pin="1"/>
+      <node ref="Cfilt1" pin="1"/>
+      <node ref="Csup1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+  </nets>
+</export>

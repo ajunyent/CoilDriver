@@ -1,0 +1,58 @@
+.HEA
+.TIM Fri 20 Jul 2018 16:27:45 BST
+.APP "Eeschema 4.0.5+dfsg1-4~bpo8+1"
+
+.ADD_COM     47u1     "C"
+.ADD_COM     47u2     "C"
+.ADD_COM     0.1     "CP1"
+.ADD_COM     U1     "LM317MDT"
+.ADD_COM     R1     "R"
+.ADD_COM     D1     "D_Schottky"
+.ADD_COM     Q1     "Q_NMOS_DGS"
+.ADD_COM     P1     "CONN_01X02"
+.ADD_COM     P3     "CONN_01X02"
+.ADD_COM     P2     "CONN_01X02"
+.ADD_COM     D2     "D_Schottky"
+.ADD_COM     R4     "R"
+.ADD_COM     R3     "R"
+.ADD_COM     R2     "R"
+
+
+.ADD_TER   R3   2     "Net-(P2-Pad1)"
+.TER       P2   1
+
+.ADD_TER   R4   2     "Earth"
+.TER       Q1   3
+            P1   2
+            R2   2
+            0.1   2
+            47u2   2
+            47u1   2
+            D2   2
+            P2   2
+
+.ADD_TER   R4   1     "Net-(Q1-Pad2)"
+.TER       Q1   2
+            R3   1
+
+.ADD_TER   P3   2     "Net-(D1-Pad2)"
+.TER       Q1   1
+            D1   2
+            D2   1
+
+.ADD_TER   R1   2     "Net-(R1-Pad2)"
+.TER       U1   2
+
+.ADD_TER   P3   1     "Net-(0.1-Pad1)"
+.TER       R1   1
+            D1   1
+            R2   1
+            U1   1
+            0.1   1
+            47u2   1
+
+.ADD_TER   47u1   1     "Net-(47u1-Pad1)"
+.TER       P1   1
+            U1   3
+
+.END
